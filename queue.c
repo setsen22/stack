@@ -42,5 +42,10 @@ if (p->head == NULL)
  */
 void q_print(Queue *p)
 {
-        /* Энд хэвлэх үйлдлийг хийнэ үү */
+ Elm *current = p->head;
+
+    while (current != NULL) {
+        printf("%d\n", current->x);
+        current = current->next;
+    }        /* Энд хэвлэх үйлдлийг хийнэ үү */
 }
